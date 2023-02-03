@@ -1,0 +1,44 @@
+{
+  "name": "functions",
+  "scripts": {
+    "lint:fix": "eslint --fix --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "test": "mocha --reporter spec",
+    "test:watch": "mocha --watch --reporter spec",
+    "test:coverage": "nyc --reporter=text mocha --reporter spec",
+    "test:ci": "mocha --reporter spec",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "expo-server-sdk": "^3.7.0",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^10.0.1",
+    "@types/sinon": "^10.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "expect": "^29.3.1",
+    "firebase-functions-test": "^3.0.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^15.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}

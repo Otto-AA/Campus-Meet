@@ -1,0 +1,13 @@
+version: "2"
+region: eu
+tunnels:
+    # the addresses match the ports in firebase.json
+    auth:
+        addr: 9099
+        proto: http
+    firestore:
+        addr: 4001
+        proto: http
+    storage:
+        addr: 9199
+        proto: http

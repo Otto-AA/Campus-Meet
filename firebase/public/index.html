@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Campus Meet | Sign In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Finish Sign In</h1>
+    <p>
+      Please open following link on your mobile phone:
+      <a id="sign-in-link" href="#"></a>.
+      <script type="text/javascript">
+        // replace url origin with the provided appUrl
+        // keep the authentication params
+        const params = new URLSearchParams(location.search);
+        const targetUrl = params.get("appUrl") + "?" + params;
+        const a = document.getElementById("sign-in-link");
+        a.href = targetUrl;
+        a.innerText = targetUrl;
+      </script>
+    </p>
+  </body>
+</html>

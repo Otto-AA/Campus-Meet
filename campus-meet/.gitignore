@@ -1,0 +1,21 @@
+node_modules/
+.expo/
+dist/
+android/
+ios/
+build*.apk
+build*.aab
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+.eslintcache
+coverage/**/*
+artifacts/
+
+# macOS
+.DS_Store

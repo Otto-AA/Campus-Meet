@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "166552167991",
+    "project_id": "campus-meet-cc6a6",
+    "storage_bucket": "campus-meet-cc6a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166552167991:android:87d784f58d56777fb801b2",
+        "android_client_info": {
+          "package_name": "com.campusmeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166552167991-247ghdgcq3fvf8d3jfvudu4mf1ilrkrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe2nTkD76Sdl09X-QgMnxpZBVcNhR2hZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166552167991-247ghdgcq3fvf8d3jfvudu4mf1ilrkrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

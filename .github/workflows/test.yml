@@ -1,0 +1,38 @@
+name: Test campus meet and firebase functions
+
+on: [push]
+
+jobs:
+  test-campus-meet:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./campus-meet
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "npm"
+          cache-dependency-path: './campus-meet/package-lock.json'
+      - run: npm ci
+      - run: npm run test:ci
+
+  test-firebase-functions:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./firebase/functions
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "npm"
+          cache-dependency-path: './firebase/functions/package-lock.json'
+      - run: npm ci
+      - run: npm run test:ci

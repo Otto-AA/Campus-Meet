@@ -1,0 +1,18 @@
+{
+  "preset": "jest-expo",
+  "collectCoverageFrom": [
+    "**/*.{js,jsx,ts,tsx}",
+    "!**/*.mock.*",
+    "!**/coverage/**",
+    "!**/node_modules/**",
+    "!**/babel.config.js",
+    "!**/jest.setup.js",
+    "!**/jest/**",
+    "!**/e2e/**",
+    "!**/seeds/**",
+    "!**/android/**",
+    "!**/ios/**"
+  ],
+  "modulePathIgnorePatterns": ["<rootDir>/e2e/"],
+  "setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"]
+}
