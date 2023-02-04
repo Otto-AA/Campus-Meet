@@ -1,4 +1,4 @@
-import { renderHook, act } from "@testing-library/react-native";
+import { renderHook } from "@testing-library/react-native";
 
 import { ChatsSyncingContext } from "../../contexts/ChatsSyncingContext";
 import { useChatsSync } from "./useChatsSync";

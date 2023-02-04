@@ -1,11 +1,4 @@
-import {
-  act,
-  fireEvent,
-  render,
-  screen,
-  waitFor,
-  renderHook,
-} from "@testing-library/react-native";
+import { waitFor, renderHook } from "@testing-library/react-native";
 
 import { ChatsDbSyncedContext } from "../../contexts/ChatsDbSyncedContext";
 import { useChatMetadata } from "./useChatMetadata";

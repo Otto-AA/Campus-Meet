@@ -1,4 +1,4 @@
-import { render, fireEvent, act } from "@testing-library/react-native";
+import { render, fireEvent } from "@testing-library/react-native";
 import React from "react";
 
 import LocationSelector from "./LocationSelector";

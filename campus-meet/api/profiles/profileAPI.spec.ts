@@ -254,6 +254,4 @@ describe("profilesAPI", () => {
       imageUrl: data.imageUrl,
     });
   });
-
-  
 });

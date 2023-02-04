@@ -1,6 +1,5 @@
 import { collection, doc } from "firebase/firestore";
 
-
 jest.mock("firebase/firestore", () => ({
   collection: jest.fn().mockReturnValue({}),
   doc: jest.fn().mockReturnValue({}),
@@ -14,8 +13,6 @@ jest.mock("../../utils/auth/currentUser", () => ({
 jest.mock("../../utils/database/firestore", () => ({
   getDb: jest.fn().mockReturnValue({}),
 }));
-
-
 
 const { setDoc } = require("firebase/firestore");
 
@@ -35,6 +32,4 @@ describe("savePushTokenToServer", () => {
     expect(doc).toHaveBeenCalledWith({}, "userId");
     expect(setDoc).toHaveBeenCalledWith({}, { token });
   });
-
-  
 });

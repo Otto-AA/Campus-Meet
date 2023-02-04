@@ -1,5 +1,3 @@
-import { configureFonts } from "react-native-paper";
-
 import { fontConfig } from "./font";
 
 describe("fontConfig", () => {

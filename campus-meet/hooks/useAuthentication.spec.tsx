@@ -1,9 +1,8 @@
-import { renderHook, act, waitFor } from "@testing-library/react-native";
-import { getAuth, onAuthStateChanged, User } from "firebase/auth";
+import { renderHook, act } from "@testing-library/react-native";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import * as authModule from "firebase/auth";
 
 import mockedAuth from "../jest/auth.mock";
-import mockedFirestore from "../jest/firestore.mock";
 import { useAuthentication } from "./useAuthentication";
 
 jest.mock("firebase/auth", () => ({

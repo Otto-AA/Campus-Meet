@@ -3,7 +3,6 @@ import { configureFonts, DarkTheme, DefaultTheme } from "react-native-paper";
 import { fontConfig } from "./font";
 import { customLightTheme, customDarkTheme } from "./theme";
 
-
 describe("Custom Light Theme", () => {
   it("should have the correct colors", () => {
     expect(customLightTheme.colors).toEqual({

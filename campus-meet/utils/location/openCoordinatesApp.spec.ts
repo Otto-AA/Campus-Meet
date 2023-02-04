@@ -1,7 +1,6 @@
 import * as Linking from "expo-linking";
-import { Platform } from "react-native";
-import { openCoordinatesInMap } from "./openCoordinatesApp";
 
+import { openCoordinatesInMap } from "./openCoordinatesApp";
 
 jest.mock("expo-linking", () => ({
   openURL: jest.fn(),
@@ -26,6 +25,4 @@ describe("openCoordinatesInMap", () => {
       "maps:0,0?q=Open in map@37.4219999,-122.0840575"
     );
   });
-
-  
 });

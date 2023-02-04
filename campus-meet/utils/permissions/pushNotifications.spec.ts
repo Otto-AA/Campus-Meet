@@ -1,4 +1,3 @@
-import * as Device from "expo-device";
 import * as Notifications from "expo-notifications";
 
 import {
@@ -7,23 +6,23 @@ import {
 } from "./pushNotification";
 
 jest.mock("expo-device", () => ({
-  isDevice: true
+  isDevice: true,
 }));
 
 jest.mock("expo-notifications", () => ({
   getPermissionsAsync: jest.fn().mockResolvedValue({ status: "granted" }),
   getExpoPushTokenAsync: jest.fn().mockResolvedValue({ data: "push-token" }),
-  setNotificationChannelAsync: jest.fn()
+  setNotificationChannelAsync: jest.fn(),
 }));
 
 jest.mock("react-native", () => ({
   Platform: {
-    OS: "ios"
-  }
+    OS: "ios",
+  },
 }));
 
 jest.mock("../../api/notifications/notificationsApi", () => ({
-  savePushTokenToServer: jest.fn().mockResolvedValue()
+  savePushTokenToServer: jest.fn().mockResolvedValue(),
 }));
 
 describe("registerForPushNotificationsAsync", () => {

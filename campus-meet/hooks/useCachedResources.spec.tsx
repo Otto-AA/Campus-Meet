@@ -1,9 +1,6 @@
-import { FontAwesome } from "@expo/vector-icons";
 import { renderHook, act } from "@testing-library/react-native";
-import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 
-import { mockedFunctionType } from "../utils/types/mockedType";
 import useCachedResources from "./useCachedResources";
 
 jest.mock("expo-font", () => ({
@@ -38,7 +35,7 @@ describe("useCachedResources", () => {
   });
 
   it("should prevent the auto hide of the splash screen", async () => {
-    const { result } = renderHook(() => useCachedResources());
+    renderHook(() => useCachedResources());
 
     await act(async () => {
       await new Promise((resolve) => setTimeout(resolve, 100));

@@ -1,8 +1,7 @@
-import { render, screen, act, fireEvent } from "@testing-library/react-native";
+import { render, screen } from "@testing-library/react-native";
 import { PropsWithChildren } from "react";
 import { Text } from "react-native-paper";
 
-import PaddedView from "../../components/styled/PaddedView";
 import { useChatsSync } from "../../hooks/chats/useChatsSync";
 import * as hooks from "../../hooks/chats/useSortedChatPreviews";
 import { mockedFunctionType } from "../../utils/types/mockedType";

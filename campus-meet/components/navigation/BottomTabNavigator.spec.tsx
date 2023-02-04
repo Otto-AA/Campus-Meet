@@ -1,11 +1,7 @@
-import { FontAwesome } from "@expo/vector-icons";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { render, fireEvent, cleanup } from "@testing-library/react-native";
+import { render } from "@testing-library/react-native";
 import React from "react";
-import { View, StatusBar } from "react-native";
-import { useTheme } from "react-native-paper";
 
-import { BottomTabNavigator, TabBarIcon } from "./BottomTabNavigator";
+import { BottomTabNavigator } from "./BottomTabNavigator";
 
 jest.mock("@react-navigation/bottom-tabs", () => {
   return {
